@@ -377,6 +377,8 @@ class SupercellSWF:
                     self.textures.append(SWFTexture())
 
                 texture = self.textures[texture_id]
+                texture.height = height
+                texture.width = width
                 texture.image = image
                 texture_id += 1
             else:

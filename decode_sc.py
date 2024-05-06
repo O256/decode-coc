@@ -7,8 +7,8 @@ def _save_shap(swf: SupercellSWF, output_folder):
     shapes_count = len(swf.shapes)
     for shape_index in range(shapes_count):
         shape = swf.shapes[shape_index]
-        rendered_shape = shape.render()
-        rendered_shape.save(f"{output_folder}/{shape.id}.png")
+        # rendered_shape = shape.render()
+        # rendered_shape.save(f"{output_folder}/{shape.id}.png")
         regions_count = len(shape.regions)
         for region_index in range(regions_count):
             region = shape.regions[region_index]
@@ -38,6 +38,7 @@ def decode_sc(input_folder, output_folder):
 
 
 def main():
+    # input_folder = "./apk/clash-of-clans-16-253-20-tmp/assets/"
     input_folder = "./apk/clash-of-clans-16-253-20/assets/"
     # input_folder = "./apk/clash-of-clans-15-83-29/assets/"
     output_folder = "./output/"

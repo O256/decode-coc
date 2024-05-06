@@ -1,0 +1,6 @@
+sc-compression
+Pillow
+pylzham
+zstandard
+pyliblzfse
+texture2ddecoder
